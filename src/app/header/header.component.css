@@ -5,3 +5,7 @@
 	color: floralwhite;
 	min-height: 150px;
 }
+.example-button-row {
+	display: table-cell;
+	width: 490px;
+  }
