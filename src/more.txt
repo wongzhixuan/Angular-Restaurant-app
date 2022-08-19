@@ -1,0 +1,81 @@
+Reading: Angular Template-driven Forms: Objectives and Outcomes
+Video: Exercise (Video): Dialogs
+Reading: Exercise (Instructions): Dialogs
+Video: Angular Template-driven Forms
+Video: Exercise (Video): Angular Template-driven Forms Part 1
+Reading: Exercise (Instructions): Angular Template-driven Forms Part 1
+Video: Angular Template-driven Form Validation
+Video: Exercise (Video): Angular Template-driven Forms Part 2
+Reading: Exercise (Instructions): Angular Template-driven Forms Part 2
+Reading: Angular Template-driven Forms: Additional Resources
+Reading: Angular Reactive Forms: Objectives and Outcomes
+Video: Angular Reactive Forms
+Video: Exercise (Video): Angular Reactive Forms Part 1
+Reading: Exercise (Instructions): Angular Reactive Forms Part 1
+Video: Angular Reactive Form Validation
+Video: Exercise (Video): Angular Reactive Forms Part 2
+Reading: Exercise (Instructions): Angular Reactive Forms Part 2
+Reading: Angular Reactive Forms: Additional Resources
+Reading: Angular and Promise: Objectives and Outcomes
+Video: Promises
+Video: Exercise (Video): Angular and Promise Part 1
+Reading: Exercise (Instructions): Angular and Promise Part 1
+Video: Exercise (Video): Angular and Promise Part 2
+Reading: Exercise (Instructions): Angular and Promise Part 2
+Reading: Angular and Promise: Additional Resources
+Reading: Angular and RxJS: Objectives and Outcomes
+Video: Angular and RxJS
+Video: Exercise (Video): Angular and RxJS Part 1
+Reading: Exercise (Instructions): Angular and RxJS Part 1
+Video: Exercise (Video): Angular and RxJS Part 2
+Reading: Exercise (Instructions): Angular and RxJS Part 2
+Video: Exercise (Video): Angular Reactive Forms Part 3
+Reading: Exercise (Instructions): Angular Reactive Forms Part 3
+Reading: Angular and RxJS: Additional Resources
+Video: Assignment 3 Requirements (Video): Single Page Applications and Angular Forms
+Reading: Assignment 3: Single Page Applications and Angular Forms: Additional Resources
+
+Reading: Client-Server Communication: Objectives and Outcomes
+Video: Networking Essentials
+Video: Exercise (Video): Setting up a Server using json-server
+Reading: Exercise (Instructions): Setting up a Server using json-server
+Reading: Client-Server Communication: Additional Resources
+Reading: Angular HTTP Client: Objectives and Outcomes
+Video: Angular HTTP Client
+Video: Brief Representational State Transfer (REST)
+Video: Exercise (Video): Angular HTTP Client
+Reading: Exercise (Instructions): Angular HTTP Client
+Video: Exercise (Video): Angular HTTP Client: Error Handling
+Reading: Exercise (Instructions): Angular HTTP Client: Error Handling
+Video: Exercise (Video): Saving Changes to Server
+Reading: Exercise (Instructions): Saving Changes to Server
+Reading: Angular HTTP Client: Additional Resources
+Reading: Animation and Directives: Objectives and Outcomes
+Video: Attribute Directives
+Video: Exercise (Video): Custom Attribute Directives
+Reading: Exercise (Instructions): Custom Attribute Directives
+Video: Angular Animations
+Video: Exercise (Video): Angular Animations Part 1
+Reading: Exercise (Instructions): Angular Animations Part 1
+Video: Exercise (Video): Angular Animations Part 2
+Reading: Exercise (Instructions): Angular Animations Part 2
+Reading: Animation and Directives: Additional Resources
+Video: Assignment 4 Requirements (Video): Client-Server Communication
+Reading: Assignment 4: Client-Server Communication: Additional Resources
+Reading: Testing Angular Applications: Objectives and Outcomes
+Video: Angular Testing
+Video: Exercise (Video): Angular Testing
+Reading: Exercise (Instructions): Angular Testing
+Video: End-to-End Testing Angular Applications
+Video: Exercise (Video): End-to-End Testing Angular Applications
+Reading: Exercise (Instructions): End-to-End Testing Angular Applications
+Reading: Testing Angular Applications: Additional Resources
+Reading: Building and Deployment: Objectives and Outcomes
+Video: Introduction to Webpack
+Video: Exercise (Video): Building and Deploying the Angular Application
+Reading: Exercise (Instructions): Building and Deploying the Angular Application
+Reading: Building and Deployment: Additional Resources
+Video: Conclusions
+Reading: Conclusions: Additional Resources
+Reading: Project Implementation: Objectives and Outcomes
+Reading: Final Report Template
