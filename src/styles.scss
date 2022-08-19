@@ -1,6 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 @import 'variables.scss';
 @import '../node_modules/font-awesome/css/font-awesome';
-
+$background-moredark: #4527A0;
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.container{
+    margin: 20px;
+    display: flex;
+  }
+  .active {
+    background: $background-moredark;
+}
