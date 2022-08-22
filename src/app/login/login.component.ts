@@ -14,7 +14,7 @@ export class LoginComponent implements OnInit {
   constructor(public dialogRef: MatDialogRef<LoginComponent>, public fb:FormBuilder) { }
   form = this.fb.group({
     'username' : [this.user.username,Validators.required],
-    'password' : [this.user.password, Validators.required],
+    'password' : [this.user.password, [Validators.required,Validators.minLength(6)]],
     'remember' : [this.user.remember]
   });
   ngOnInit(): void {
@@ -23,6 +23,10 @@ export class LoginComponent implements OnInit {
   onSubmit(){
     console.log('User: ', this.form.value);
     this.dialogRef.close(); // close dialog box
+  }
+
+  get username(){
+    return this.form.get('username');
   }
 
 

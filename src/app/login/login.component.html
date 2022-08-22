@@ -16,14 +16,16 @@
                 <!-- <input matInput placeholder="Username" type="text" [(ngModel)]="user.username" 
                 name="username" #username="ngModel" required/> -->
                 <input matInput placeholder="Username" type="text" name="username" formControlName="username" id="username"/>
-                <mat-error *ngIf="form.get('username')?.invalid && (form.get('username')?.dirty || form.get('username')?.touched)">Username is required</mat-error>
+                <mat-error *ngIf="username?.invalid && (username?.dirty || username?.touched)">Username is required</mat-error>
                 <!-- <mat-error *ngIf="username.errors?.['required']">Username is required</mat-error> -->
             </mat-form-field>
             <mat-form-field>
                 <!-- <input matInput placeholder="Password" type="password" [(ngModel)]="user.password" 
                 name="password" #password="ngModel" required/> -->
                 <input matInput placeholder="Password" type="password" name="password" formControlName="password"/>
-                <mat-error *ngIf="form.get('password')?.invalid && (form.get('password')?.dirty || form.get('password')?.touched)">Password is required</mat-error>
+                <!-- <mat-error *ngIf="form.get('password')?.invalid && (form.get('password')?.dirty || form.get('password')?.touched)">Password is required</mat-error> -->
+                <mat-error *ngIf="form.get('password')?.errors?.['required']">Password is required</mat-error>
+                <mat-error *ngIf="form.get('password')?.errors?.['minlength'] ">Password must be at least 6 characters long.</mat-error>
                 <!-- <mat-error *ngIf="password.errors?.['required']">Password is required</mat-error> -->
             </mat-form-field>
             <!-- <mat-checkbox [(ngModel)] = "user.remember" name="remember">Remember Me</mat-checkbox> -->
