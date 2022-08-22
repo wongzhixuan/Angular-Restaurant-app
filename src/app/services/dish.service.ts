@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import {Dish} from '../shared/dish';
 import {DISHES} from '../shared/dishes';
+import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
@@ -8,8 +9,13 @@ export class DishService {
 
   constructor() { }
 
-  getDishes(): Dish[] {
-    return DISHES;
+  getDishes(): any {
+    const observable = new Observable(observer =>{
+      setTimeout( () => {
+        observer.next(DISHES)
+      }, 1000);
+    });
+    return observable;  
   }
 
   getDish(id: string): Dish {
