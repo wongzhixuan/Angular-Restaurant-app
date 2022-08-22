@@ -32,8 +32,9 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';  // group form elements
 import { MatInputModule } from '@angular/material/input';
 import { MatCheckboxModule } from '@angular/material/checkbox';
-import { FormsModule } from '@angular/forms'; // template driven forms
-
+//import { FormsModule } from '@angular/forms'; // template driven forms
+import { ReactiveFormsModule } from '@angular/forms';  // reactive forms
+ 
 @NgModule({
   declarations: [
     AppComponent,
@@ -57,7 +58,8 @@ import { FormsModule } from '@angular/forms'; // template driven forms
     MatCardModule,
     MatButtonModule,
     MatDialogModule,
-    FormsModule,
+    // FormsModule,
+    ReactiveFormsModule,
     MatFormFieldModule,
     MatInputModule,
     MatCheckboxModule

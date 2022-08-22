@@ -16,6 +16,7 @@ Video: Angular Reactive Form Validation
 Video: Exercise (Video): Angular Reactive Forms Part 2
 Reading: Exercise (Instructions): Angular Reactive Forms Part 2
 Reading: Angular Reactive Forms: Additional Resources
+
 Reading: Angular and Promise: Objectives and Outcomes
 Video: Promises
 Video: Exercise (Video): Angular and Promise Part 1

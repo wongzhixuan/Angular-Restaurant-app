@@ -4,29 +4,39 @@
     <button mat-button mat-dialog-close>&times;</button>
 </mat-toolbar>
 <br>
-<p>{{ user | json }}</p>
+<!-- <p>{{ user | json }}</p> -->
+<p>Form Status: {{ form.status }}</p>
+<p>Form Values: {{ form.value | json}}</p>
 <!-- novalidate to disable validation by browser, instead it is taken care by angular-->
-<form novalidate (ngSubmit)="onSubmit()" #loginForm = "ngForm">
+<!-- <form novalidate (ngSubmit)="onSubmit()" #loginForm = "ngForm"> -->
+    <form (ngSubmit)="onSubmit()" [formGroup]="form" novalidate>
     <mat-dialog-content>
         <p>
             <mat-form-field>
-                <input matInput placeholder="Username" type="text" [(ngModel)]="user.username" 
-                name="username" #username="ngModel" required/>
-                <mat-error *ngIf="username.errors?.['required']">Username is required</mat-error>
+                <!-- <input matInput placeholder="Username" type="text" [(ngModel)]="user.username" 
+                name="username" #username="ngModel" required/> -->
+                <input matInput placeholder="Username" type="text" name="username" formControlName="username" id="username"/>
+                <mat-error *ngIf="form.get('username')?.invalid && (form.get('username')?.dirty || form.get('username')?.touched)">Username is required</mat-error>
+                <!-- <mat-error *ngIf="username.errors?.['required']">Username is required</mat-error> -->
             </mat-form-field>
             <mat-form-field>
-                <input matInput placeholder="Password" type="password" [(ngModel)]="user.password" 
-                name="password" #password="ngModel" required/>
-                <mat-error *ngIf="password.errors?.['required']">Password is required</mat-error>
+                <!-- <input matInput placeholder="Password" type="password" [(ngModel)]="user.password" 
+                name="password" #password="ngModel" required/> -->
+                <input matInput placeholder="Password" type="password" name="password" formControlName="password"/>
+                <mat-error *ngIf="form.get('password')?.invalid && (form.get('password')?.dirty || form.get('password')?.touched)">Password is required</mat-error>
+                <!-- <mat-error *ngIf="password.errors?.['required']">Password is required</mat-error> -->
             </mat-form-field>
-            <mat-checkbox [(ngModel)] = "user.remember" name="remember">Remember Me</mat-checkbox>
+            <!-- <mat-checkbox [(ngModel)] = "user.remember" name="remember">Remember Me</mat-checkbox> -->
+            <mat-checkbox formControlName="remember" name="remember">Remember Me</mat-checkbox>
         </p>
     </mat-dialog-content>
     <mat-dialog-actions>
         <span class="flex-spacer"></span>
         <button mat-button mat-dialog-close>Cancel</button>
+        <!-- <button mat-button type="submit" class="background-primary text-floral-white"
+        [disabled]="loginForm.form.invalid">Login</button> -->
         <button mat-button type="submit" class="background-primary text-floral-white"
-        [disabled]="loginForm.form.invalid">Login</button>
+        [disabled]="!form.valid">Login</button>
     </mat-dialog-actions>
 
 </form>
