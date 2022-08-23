@@ -35,6 +35,10 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 //import { FormsModule } from '@angular/forms'; // template driven forms
 import { ReactiveFormsModule } from '@angular/forms';  // reactive forms
  
+
+// Http Client
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
